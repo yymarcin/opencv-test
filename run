@@ -1,3 +1,6 @@
-LD_LIBRARY_PATH=/home/marcin/Desktop/wykrywanietwarzy/lib
+LD_LIBRARY_PATH=/home/ubuntu/Desktop/opencv/opencv-test/lib
 export LD_LIBRARY_PATH
+# train/opencv_createsamples -info cascade/pos.info -num 40 -w 24 -h 48 -vec cascade/zeros.vec
+# train/opencv_createsamples -vec cascade/zeros.vec -w 24 -h 48
+#train/opencv_traincascade -data cascade/data0 -vec cascade/zeros.vec -bg cascade/bg.txt -numPos 40 -numNeg 713 -numStages 10 -w 24 -h 48 -featureType LBP -precalcValBufSize 4048 -precalcIdxBufSize 4048
 ./a.out
