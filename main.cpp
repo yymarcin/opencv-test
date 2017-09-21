@@ -11,7 +11,10 @@ using namespace std;
 string face_cascade_name = "cascade_0.xml";    //Nazwa kaskady którą wykorzystujemy do rozpoznania twarzy 
 CascadeClassifier face_cascade;                                //Utworzenie obiektu cascady twarzy 
 string window_name = "Hello Face !"; 
-const string img_name = "1.jpeg"; 
+const string img_name = "X-screen-medium01.jpg"; 
+//const string img_name = "1.jpeg"; 
+//const string img_name = "25.png"; 
+
 
 void detectFace( Mat img ); 
 
