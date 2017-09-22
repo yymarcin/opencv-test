@@ -11,15 +11,16 @@ using namespace std;
 string face_cascade_name = "cascade_0.xml";    //Nazwa kaskady którą wykorzystujemy do rozpoznania twarzy 
 CascadeClassifier face_cascade;                                //Utworzenie obiektu cascady twarzy 
 string window_name = "Hello Face !"; 
-const string img_name = "X-screen-medium01.jpg"; 
+//const string img_name = "X-screen-medium01.jpg"; 
 //const string img_name = "1.jpeg"; 
-//const string img_name = "25.png"; 
+const string img_name = "25.png"; 
 
 
 void detectFace( Mat img ); 
 
 int main( int argc, char** argv ) 
 { 
+    cout<<"start"<<endl;
     Mat img;                                            //Utworzenie nowej macierzy na nasz obrazek 
     img = imread( img_name );                            //Wczytanie obrazka z dysku 
     if ( !img.data )                                    //Sprawdzenie czy ładowanie obrazka przebiegło pomyslnie 
@@ -27,12 +28,15 @@ int main( int argc, char** argv )
         cout << "Nie znaleziono pliku " <<  img_name << "."; 
         return -1; 
     } 
+    cout<<"img"<<endl;
     if( !face_cascade.load( face_cascade_name ) )        //Ładowanie pliku ze sprawdzeniem poprawnoci 
     { 
         cout << "Nie znaleziono pliku " << face_cascade_name << "."; 
         return -2; 
     } 
+    cout<<"cascade"<<endl;
     namedWindow(window_name, CV_WINDOW_AUTOSIZE);    //Utworzenie okna (nazwa okna, ustalenie rozmiaru) 
+    cout<<"okno"<<endl;
     detectFace(img); 
     waitKey(0);                                            //Odczekanie na wcisnięce klawisza z opóźnieniem 0ms 
     return 0; 
