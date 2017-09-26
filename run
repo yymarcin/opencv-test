@@ -3,5 +3,6 @@ export LD_LIBRARY_PATH
 #train/opencv_createsamples -info cascade/pos.info -num 320 -w 24 -h 48 -vec cascade/zeros.vec
 # train/opencv_createsamples -vec cascade/zeros.vec -w 24 -h 48
 #train/opencv_traincascade_deb -data cascade/data0 -vec cascade/zeros.vec -bg cascade/bg.txt -numPos 320 -numNeg 300 -numStages 10 -w 24 -h 48 -precalcValBufSize 2024 -precalcIdxBufSize 2024
-train/opencv_traincascade_myeval -info cascade/pos.info -data cascade/data0 -vec cascade/zeros.vec -bg cascade/bg.txt -numPos 320 -numNeg 300 -numStages 10 -w 24 -h 48 -precalcValBufSize 2024 -precalcIdxBufSize 2024
+#train/opencv_traincascade_myeval -info cascade/pos.info -data cascade/data0 -vec cascade/zeros.vec -bg cascade/bg.txt -numPos 320 -numNeg 300 -numStages 10 -w 24 -h 48 -precalcValBufSize 2024 -precalcIdxBufSize 2024
 #./a.out
+train/opencv_visualisation -image /home/ubuntu/Desktop/opencv/opencv-test/1_res.jpg -model /home/ubuntu/Desktop/opencv/opencv-test/cascade_0.xml -data /home/ubuntu/Desktop/opencv/opencv-test/data/
