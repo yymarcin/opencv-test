@@ -13,7 +13,7 @@ CascadeClassifier face_cascade;                                //Utworzenie obie
 string window_name = "Hello Face !"; 
 //const string img_name = "X-screen-medium01.jpg"; 
 //const string img_name = "1.jpeg"; 
-const string img_name = "25.png"; 
+const string img_name = "1.jpeg"; 
 
 
 void detectFace( Mat img ); 
