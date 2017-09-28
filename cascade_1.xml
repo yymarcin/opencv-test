@@ -25,12 +25,12 @@
       <weakClassifiers>
         <_>
           <internalNodes>
-            0 -1 0 -0.2</internalNodes>
+            0 -1 0 0.35</internalNodes>
           <leafValues>
-           0.5 -1.</leafValues></_>
+           -1. 0.5</leafValues></_>
         <_>
           <internalNodes>
-            0 -1 1 -0.11</internalNodes>
+            0 -1 1 -0.15</internalNodes>
           <leafValues>
            0.5 -1.</leafValues></_>
         <_>
@@ -44,14 +44,14 @@
         <_>
           2 10 18 15 1.</_>
         <_>
-          8 10 7 15 -2.</_></rects>
+          10 10 7 15 -2.</_></rects>
       </_>
     <_>
       <rects>
         <_>
-          8 2 6 31 1.</_>
+          6 2 8 31 1.</_>
         <_>
-          8 10 6 15 -2.</_></rects>
+          6 10 4 23 -2.</_></rects>
       </_>
     <_>
       <rects>

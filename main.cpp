@@ -8,12 +8,12 @@
 using namespace cv; 
 using namespace std; 
 
-string face_cascade_name = "cascade_0.xml";    //Nazwa kaskady którą wykorzystujemy do rozpoznania twarzy 
+string face_cascade_name = "cascade_2.xml";    //Nazwa kaskady którą wykorzystujemy do rozpoznania twarzy 
 CascadeClassifier face_cascade;                                //Utworzenie obiektu cascady twarzy 
 string window_name = "Hello Face !"; 
 //const string img_name = "X-screen-medium01.jpg"; 
 //const string img_name = "1.jpeg"; 
-const string img_name = "1.jpeg"; 
+const string img_name = "numbers.jpg"; 
 
 
 void detectFace( Mat img ); 
@@ -50,7 +50,7 @@ void detectFace( Mat img )
     cvtColor(img, img_gray,  CV_BGR2GRAY );                //Konwersja obrazu do odcieni szarosci 
     //equalizeHist(img_gray, img_gray);                    //Zaaplikowanie do obrazu jego historogramu, poprawa kontrastu 
 
-    face_cascade.detectMultiScale(img_gray, faces, 1.1, 3, 0|CV_HAAR_SCALE_IMAGE, Size(50, 50) ); 
+    face_cascade.detectMultiScale(img_gray, faces, 1.1, 3, 0|CV_HAAR_SCALE_IMAGE, Size(0,0) ); 
     for( unsigned i = 0; i < faces.size(); i++ ) 
     { 
         Rect rect_face( faces[i] );    //Kwadrat okreslający twarz 

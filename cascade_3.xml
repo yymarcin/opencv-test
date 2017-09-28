@@ -20,42 +20,58 @@
   <stages>
     <!-- stage 0 -->
     <_>
-      <maxWeakCount>3</maxWeakCount>
+      <maxWeakCount>4</maxWeakCount>
       <stageThreshold>1.</stageThreshold>
       <weakClassifiers>
         <_>
           <internalNodes>
-            0 -1 0 -0.2</internalNodes>
+            0 -1 0 0.1</internalNodes>
           <leafValues>
-           0.5 -1.</leafValues></_>
+           0.2 -0.2</leafValues></_>
         <_>
           <internalNodes>
-            0 -1 1 -0.11</internalNodes>
+            0 -1 1 0.1</internalNodes>
           <leafValues>
-           0.5 -1.</leafValues></_>
+           0.2 -0.2</leafValues></_>
         <_>
           <internalNodes>
-            0 -1 2 0.3</internalNodes>
+            0 -1 2 -0.25</internalNodes>
           <leafValues>
-           0 -10.</leafValues></_></weakClassifiers></_></stages>
+           0.8 -1.</leafValues></_>
+        <_>
+          <internalNodes>
+            0 -1 3 0</internalNodes>
+          <leafValues>
+           0.2 -0.2</leafValues></_></weakClassifiers></_></stages>
   <features>
     <_>
       <rects>
         <_>
-          2 10 18 15 1.</_>
+          2 0 20 10 1.</_>
         <_>
-          8 10 7 15 -2.</_></rects>
+          6 4 12 6 -2.</_></rects>
       </_>
     <_>
       <rects>
         <_>
-          8 2 6 31 1.</_>
+          2 25 20 10 1.</_>
         <_>
-          8 10 6 15 -2.</_></rects>
+          6 25 12 6 -2.</_></rects>
       </_>
     <_>
       <rects>
         <_>
-          8 10 6 15 1</_></rects>
+          12 10 12 15 1.</_>
+        <_>
+          0 10 12 15 -1.</_></rects>
+      </_>
+    <_>
+      <rects>
+        <_>
+          12 15 4 4 2.</_>
+        <_>
+          16 19 4 4 2.</_>
+        <_>
+          12 19 4 4 -1.</_></rects>
       </_></features></cascade>
 </opencv_storage>

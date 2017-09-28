@@ -1,0 +1,13 @@
+LD_LIBRARY_PATH=/home/ubuntu/Desktop/opencv/opencv-test/lib
+export LD_LIBRARY_PATH
+model=/home/ubuntu/Desktop/opencv/opencv-test/cascade_2.xml
+train/opencv_visualisation -image /home/ubuntu/Desktop/opencv/opencv-test/zero.jpg -model $model -data /home/ubuntu/Desktop/opencv/opencv-test/data/0/
+train/opencv_visualisation -image /home/ubuntu/Desktop/opencv/opencv-test/one.jpg -model $model -data /home/ubuntu/Desktop/opencv/opencv-test/data/1/
+train/opencv_visualisation -image /home/ubuntu/Desktop/opencv/opencv-test/two2.jpg -model $model -data /home/ubuntu/Desktop/opencv/opencv-test/data/2/
+train/opencv_visualisation -image /home/ubuntu/Desktop/opencv/opencv-test/three.jpg -model $model -data /home/ubuntu/Desktop/opencv/opencv-test/data/3/
+train/opencv_visualisation -image /home/ubuntu/Desktop/opencv/opencv-test/four.jpg -model $model -data /home/ubuntu/Desktop/opencv/opencv-test/data/4/
+train/opencv_visualisation -image /home/ubuntu/Desktop/opencv/opencv-test/five.jpg -model $model -data /home/ubuntu/Desktop/opencv/opencv-test/data/5/
+train/opencv_visualisation -image /home/ubuntu/Desktop/opencv/opencv-test/six.jpg -model $model -data /home/ubuntu/Desktop/opencv/opencv-test/data/6/
+train/opencv_visualisation -image /home/ubuntu/Desktop/opencv/opencv-test/seven.jpg -model $model -data /home/ubuntu/Desktop/opencv/opencv-test/data/7/
+train/opencv_visualisation -image /home/ubuntu/Desktop/opencv/opencv-test/eight.jpg -model $model -data /home/ubuntu/Desktop/opencv/opencv-test/data/8/
+train/opencv_visualisation -image /home/ubuntu/Desktop/opencv/opencv-test/nine.jpg -model $model -data /home/ubuntu/Desktop/opencv/opencv-test/data/9/
